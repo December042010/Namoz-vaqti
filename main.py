@@ -1,5 +1,6 @@
 import requests
 import telebot
+import os
 from telebot import types
 
 from keep_alive import keep_alive
@@ -7,7 +8,9 @@ from keep_alive import keep_alive
 keep_alive()
 
 TOKEN = "6996337014:AAGXq-tQQbjbfT-RIXNdcppTZsPYAMbnzRQ"
-bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(token=os.environ.get(TOKEN))
+
+
 
 Jiz_url = 'https://islomapi.uz/api/present/day?region=Jizzax'
 Tosh_url = 'https://islomapi.uz/api/present/day?region=Toshkent'
