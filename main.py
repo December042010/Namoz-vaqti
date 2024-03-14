@@ -7,8 +7,8 @@ from keep_alive import keep_alive
 
 keep_alive()
 
-TOKEN = "6996337014:AAGXq-tQQbjbfT-RIXNdcppTZsPYAMbnzRQ"
-bot = telebot.TeleBot(token=os.environ.get(TOKEN))
+
+bot = telebot.TeleBot(token=os.environ.get('token'))
 
 
 
