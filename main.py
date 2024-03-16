@@ -151,7 +151,7 @@ def PrayTime(message):
           saharlik = '4:38'
           iftorlik = '19:04'
         
-        bot.send_message(message.chat.id, f"بِسْـــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِـــــــــــيم\n{region} {date} {hijri_date_date}\n{weekday}\nSollallohu 'alayka yaa Rosulalloh!\n\n<b>{saharlik} SAHARLIK\n\n{iftorlik} IFTORLIK</b>\n\n{fajr} BOMDOD\n\n{sunrise} QUYOSH\n\n{dhuhr} PESHIN\n\n{asr} ASR\n\n{maghrib} SHOM\n\n{isha} XUFTON\n\n20:30 XUFTON. Жамоат намози, кетидан ТАРОВЕХ намози.\n\nMasjidlarda jamoat namoziga takbir turli xil vaqtlarda tushiriladi.", parse_mode='html')
+        bot.send_message(message.chat.id, f"بِسْـــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِـــــــــــيم\n{region} {date} {hijri_date_date}\n{weekday}\nSollallohu 'alayka yaa Rosulalloh!\n--------------------\n<b>{saharlik} SAHARLIK\n\n{iftorlik} IFTORLIK</b>\n--------------------\n{fajr} BOMDOD\n\n{sunrise} QUYOSH\n\n{dhuhr} PESHIN\n\n{asr} ASR\n\n{maghrib} SHOM\n\n{isha} XUFTON\n--------------------\n20:30 XUFTON. Жамоат намози, кетидан ТАРОВЕХ намози.\n\nMasjidlarda jamoat namoziga takbir turli xil vaqtlarda tushiriladi.", parse_mode='html')
         #Toshkent
     if text == 'Toshkent':
         response = requests.get(Tosh_url)
